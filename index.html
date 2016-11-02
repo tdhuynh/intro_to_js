@@ -5,6 +5,52 @@
     <title>Intro to JS</title>
   </head>
   <body>
-    
+    <script type="text/javascript">
+
+      // Hello World
+      var myMessage = "Hello World";
+      console.log(myMessage);
+
+      // different Strings
+      var myWord = "Strings are the same in JS";
+      console.log(myWord);
+
+      // variable number
+      var myNum = 48907854738;
+      console.log(myNum);
+
+      // string interpolation
+      console.log(myNum + " " + myWord);
+
+      // band array
+      var myFavoriteBands = ["Bon Iver", "The Shins", "Grimes",
+                             "St. Vincent", "Joanna Newsom"
+                           ];
+
+      // push to array
+      myFavoriteBands.push("Har Mar Superstar", "Beach House", "James Vincent McMorrow");
+      console.log(myFavoriteBands);
+
+      // iterate and output array
+      for (var i = 0 ; i < myFavoriteBands.length ; i++ ) {
+        console.log(myFavoriteBands[i]);
+      }
+
+      // sentence to array
+      var sentence = "Schlitz four dollar toast godard truffaut bespoke neutra artisan pop-up. Chia keytar single-origin coffee sustainable disrupt.";
+      var myArray = sentence.split(" ");
+      console.log(myArray);
+
+
+      // return words with 6 characters
+      var six_char = function(word) {
+        if (word.length == 6) {
+          console.log(word);
+        }
+      }
+
+      myArray.forEach(six_char);
+
+    </script>
   </body>
 </html>
